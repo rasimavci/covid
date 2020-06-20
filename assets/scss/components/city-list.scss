@@ -1,0 +1,72 @@
+@import "../variables";
+
+.city-list{
+  &__inner {
+    padding-top: 35px;
+  }
+
+  .city-card {
+    height: 245px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 35px auto;
+    //max-width: 1250px;
+    justify-content: center;
+  }
+
+  &__col {
+    padding: 10px;
+    @include bp(small-desktop) {
+      max-width: 50%;
+      flex: auto;
+    }
+    @include bp(mobile) {
+      max-width: 100%;
+      flex: auto;
+    }
+  }
+
+
+  &-result {
+
+    &__list {
+      margin-top: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__item {
+      padding: 10px;
+      display: inline-block;
+      @include bp(tablet) {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+      }
+      @include bp(mobile) {
+        width: 100%;
+      }
+      a{
+        @include bp(tablet) {
+         width: 100%;
+        }
+      }
+    }
+
+    &__bottom {
+      margin-top: 30px;
+    }
+
+  }
+
+}
+
+
+

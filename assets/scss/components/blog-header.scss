@@ -1,0 +1,154 @@
+@import "../variables";
+
+.blog-header {
+  .shape-13,.shape-11, .shape-12{
+    @include bp(mobile) {
+      display: none;
+    }
+  }
+  background: #eff3fb;
+  min-height: 480px;
+  display: flex;
+  align-items: stretch;
+  padding-top: 87px;
+
+  &__wrp {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    padding-bottom: 25px;
+  }
+
+  &__left {
+    max-width: 55%;
+    @include bp(mobile) {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 51px;
+    margin-bottom: 25px;
+    @include bp(mobile) {
+      font-size: 35px;
+    }
+  }
+
+  &__txt {
+    color: #656e8d;
+    font-size: 17px;
+    opacity: 0.75;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 45%;
+
+    .shape-13 {
+      path {
+        fill: #dfe7f6;
+      }
+    }
+
+  }
+
+  .shape-13 {
+    transform: scaleX(-1);
+    right: 120px;
+    width: 300px;
+  }
+
+  &__shape {
+    position: absolute;
+    width: 125px;
+    z-index: 12;
+    right: 165px;
+    bottom: 59px;
+    @include bp(mobile) {
+      width: 65px;
+      right: 0;
+      bottom: 12px;
+      display: none;
+    }
+  }
+
+  &-social {
+    margin-top: 30px;
+
+    &__title {
+      font-weight: 600;
+      color: #656e8d;
+      font-size: 16px;
+      margin-bottom: 13px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__item {
+      box-shadow: 0px 7px 16px 0px rgba(41, 53, 108, 0.15);
+      color: #656e8d;
+      width: 47px;
+      height: 47px;
+      margin-right: 13px;
+      background: #fff;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      font-size: 21px;
+
+      @include bp(mobile) {
+        width: 100%;
+
+
+      }
+
+      &:hover {
+        color: #4b5ba4;
+        box-shadow: 0px 11px 36px 0px rgba(41, 53, 108, 0.2);
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+@import "../variables";
+
+.questions-answer{
+  .user__list-comment-input{
+    height: 100%;
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .answers-box{
+    width: 91%;
+    margin: 0 auto;
+    box-shadow: none;
+    .user__list-offer__item{
+      box-shadow: none;
+    }
+  }
+  .user-wrp-comments .user__list-link{
+    color:#eb6081;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover{
+      color: #707998;
+    }
+  }
+  .user-wrp-comments .user__list-comment-box{
+    width: 101%;
+    position: relative;
+    top: -15px;
+    margin-top: 12px;
+  }
+  .user__list__dorm-img-wrp{
+    background-color: transparent;
+    margin-right: 12px;
+    @include bp(mobile) {
+     margin-right:0;
+    }
+  }
+  .user__list-offer__item{
+    background-color: transparent;
+    box-shadow: none !important;
+    display: block;
+    border-top: 1px solid #d2d2d2;
+    border-radius: 0;
+    padding: 20px 0;
+    padding-bottom: 1px;
+    &:first-child{
+      border-top:0;
+    }
+  }
+  .user__list__dorm-name{
+    color: #656e8d;
+    font-weight: 600;
+  }
+  .user-wrp-comments .user__list-comment{
+    font-size: 15px;
+    width: 87%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .user__list-comment-wrp{
+    border-bottom: 0 !important;
+  }
+  .user__list-offer__item.comment{
+    border-top: 1px solid #cccccc;
+    border-radius: 0;
+    margin-left: 47px;
+    padding: 23px 0;
+    padding-bottom: 9px;
+  }
+  .user__list-offer__item.comment .user__list-comment{
+    width: 86%;
+
+  }
+  .user__list-offer__item:hover{
+    background-color: transparent;
+  }
+
+  &__box{
+    width: 65% !important;
+    margin:0 auto;
+    @include bp(mobile) {
+     width: 100% !important;
+    }
+  }
+}
+
+.user-wrp-comments .user__list-comment-wrp {
+  margin-bottom: 20px;
+}

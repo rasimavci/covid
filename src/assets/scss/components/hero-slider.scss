@@ -1,0 +1,144 @@
+@import "../variables";
+
+//Aktif itemlar -> Görünmeyen itemlar
+.hero-slider {
+  .swiper-slide{
+    opacity: 0 !important;
+    transform: scale(0.5) !important;
+    @include bp(mobile) {
+      transform: initial !important;
+      opacity: 1 !important;
+    }
+
+
+  }
+
+
+//Aktif itemlar -> 4 tane
+  .swiper-slide-active,
+  .swiper-slide-next,
+  .swiper-slide-next + .swiper-slide,
+  .swiper-slide-next + .swiper-slide + .swiper-slide
+  {
+    opacity: 1 !important;
+    pointer-events: auto;
+    transform: scale(1) !important;
+    background-color: transparent !important;
+    @include bp(mobile) {
+      transform: initial !important;
+
+    }
+  }
+
+  .swiper-slide-next,
+  .swiper-slide-prev{
+    z-index: 9999;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    background-color: transparent !important;
+  }
+
+
+  margin-top: 100px;
+  margin-bottom: -155px;
+  position: relative;
+  z-index: 3;
+
+
+  @include bp(mobile) {
+    margin-top: 0px;
+
+  }
+
+  .swiper-container{
+    overflow: visible;
+  }
+
+  &__item {
+    background: #fff;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    transition: all .3s ease-in-out;
+    @include bp(tablet) {
+      height: 190px;
+    }
+
+
+
+    &:hover {
+      box-shadow: 0px 27px 68px 0px rgba(62, 62, 141, 0.1);
+
+      .hero-slider__logo {
+        filter: none;
+      }
+    }
+    &:hover{
+      .hero-slider__logo{
+        opacity: 1;
+      }
+      .hero-slider__title{
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+  &__logo {
+    height: 65px;
+    opacity: 0.6;
+    transition: all .3s;
+    @include bp(tablet) {
+      height: auto;
+    }
+  }
+
+  &__title {
+    color: #656e8d;
+    font-size: 17px;
+    line-height: 1.5em;
+    margin-top: 10px;
+    opacity: 0.7;
+    transition: all .3s ease-in-out;
+    @include bp(tablet) {
+      font-size:17px;
+    }
+  }
+
+  .swiper-slide {
+    //opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+
+    @include bp(mobile) {
+      width: 275px;
+    }
+
+    @include bp(mobile-xsmall) {
+      width: 200px;
+      padding: 5px;
+    }
+
+    &-active, &-next, &-next + .swiper-slide, &-next + .swiper-slide + .swiper-slide {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+  }
+
+}
+
+.home .hero-slider__logo{
+  @include bp(mobile){
+    height: 65px;
+  }
+}

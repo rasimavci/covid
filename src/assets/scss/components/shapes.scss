@@ -1,0 +1,164 @@
+@import "../variables";
+
+.shape-1 {
+  transform: translateY(-100%);
+  width: 170px;
+  top: 1px;
+  position: absolute;
+  left: 0;
+  @include dont-touch;
+
+  @include bp(mobile) {
+    display: none;
+  }
+}
+
+.shape-2 {
+  transform: translateY(-100%);
+  width: 170px;
+  top: 1px;
+  position: absolute;
+  right: 0;
+  @include dont-touch;
+
+  @include bp(mobile) {
+    display: none;
+  }
+}
+
+.shape-4 {
+  position: absolute;
+  width: 180px;
+  left: 0;
+  bottom: 0;
+  @include dont-touch;
+}
+
+.shape-5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  @include dont-touch;
+}
+
+.shape-6 {
+  position: absolute;
+  bottom: 0;
+  left: 125px;
+  height: 89px;
+  z-index: 2;
+  @include dont-touch;
+}
+
+.shape-7 {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  @include dont-touch;
+}
+
+.shape-8 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  @include dont-touch;
+}
+
+.shape-9 {
+  position: absolute;
+  height: 75%;
+  bottom: 0;
+  z-index: 4;
+  width: 85vw;
+  object-fit: cover;
+  @include dont-touch;
+}
+
+.shape-10 {
+  position: absolute;
+  left: 0;
+  top: 27%;
+  width: 40vw;
+  object-fit: contain;
+  object-position: left bottom;
+  transform: translateY(-100%);
+  @include dont-touch;
+
+  @include bp(mobile) {
+    position: absolute;
+    left: -50px;
+    top: 4px;
+    width: 100vw;
+  }
+  @include bp(mobile-xsmall) {
+    position: absolute;
+    left: 0px;
+  }
+}
+
+.shape-11 {
+  position: absolute;
+  width: 150px;
+  top: 35%;
+  left: 75px;
+  @include dont-touch;
+  z-index: 11;
+}
+
+.shape-12 {
+  position: absolute;
+  width: 150px;
+  right: 0;
+  top: 20%;
+  @include dont-touch;
+  z-index: 9;
+}
+
+.shape-13 {
+  position: absolute;
+  bottom: -1px;
+  width: 250px;
+  right: -65px;
+  z-index: 15;
+  @include dont-touch;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

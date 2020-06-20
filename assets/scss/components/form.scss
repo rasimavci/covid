@@ -1,0 +1,129 @@
+.form {
+  padding: 20px;
+  border-radius: 10px;
+
+  &-box {
+    box-shadow: 0 9px 31px 0 rgba(41, 53, 108, 0.23);
+    background: #fff;
+  }
+
+  &-container {
+    position: relative;
+    margin-bottom: 15px;
+
+    &:last-child {
+      //margin-bottom: 0;
+    }
+
+    &:nth-last-child(2) {
+      .form-input {
+        //border-bottom: 0;
+      }
+    }
+
+  }
+
+  &-input {
+    padding-left: 0;
+    font-size: 15px;
+    font-weight: 600;
+    height: 49px;
+    position: relative;
+    top: 11px;
+    padding-bottom: 5px;
+
+    &:valid,&:invalid {
+      & + .form-placeholder {
+        transform: translate3d(0, -90%, 0) scale3d(0.8, 0.8, 1);
+      }
+    }
+
+    &:placeholder-shown {
+      & + .form-placeholder {
+        transform: none;
+      }
+    }
+
+    &:focus {
+      & + .form-placeholder {
+        transform: translate3d(0, -90%, 0) scale3d(0.8, 0.8, 1);
+      }
+    }
+
+    &.textarea {
+      height: 115px;
+      padding-top: 13px;
+    }
+
+  }
+
+  textarea.form-input {
+    height: 150px;
+  }
+
+  &-placeholder {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: all .3s;
+    pointer-events: none;
+    user-select: none;
+    font-size: 14px;
+    transform-origin: 0 50%;
+    color: #9198b2;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+
+  &-row {
+    margin: 0!important;
+    align-items: center;
+  }
+
+  &-subtitle {
+    font-size: 21px;
+    font-weight: 700;
+    color: #546391;
+    margin-right: 15px;
+  }
+
+  &-bottom {
+    display: flex;
+    align-items: center;
+
+    .button {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+  }
+
+  .select-header {
+    //border-bottom: 1px solid #dde3eb;
+    //border-radius: 0;
+    //padding-left: 0;
+    background: #f0f4f9;
+
+    &:hover, &.open {
+      //background: none;
+    }
+
+  }
+
+  &-message {
+    width: 100%;
+    margin-top: 1.05rem;
+    font-size: 80%;
+    color: #dc3545;
+
+    &.error {
+      color: #dc3545;
+    }
+
+  }
+
+}

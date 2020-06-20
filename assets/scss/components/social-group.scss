@@ -1,0 +1,50 @@
+@import "../variables";
+
+.social-group {
+  margin-top: 30px;
+  @include bp(mobile) {
+    border-top: 1px solid #c9cfdd5e;
+    padding: 25px 25px 25px 0;
+    border-bottom: 1px solid #c9cfdd5e;
+  }
+
+  &__title {
+    font-weight: 600;
+    color: #656e8d;
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__item {
+    box-shadow: 0px 7px 16px 0px rgba(41, 53, 108, 0.15);
+    color: #656e8d;
+    width: 47px;
+    height: 47px;
+    margin-right: 13px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 21px;
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #4b5ba4;
+      box-shadow: 0px 11px 36px 0px rgba(41, 53, 108, 0.2);
+    }
+
+  }
+
+}
+
+

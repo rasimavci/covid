@@ -1,0 +1,399 @@
+@import "../variables";
+
+.account-dorm {
+  .room-services .add-services[data-v-2211300a] {
+    @include bp(mobile) {
+      font-size: 11px;
+    }
+  }
+
+  .room-services {
+    @include bp(mobile) {
+      width: 98%;
+      left: 3px;
+      position: relative;
+    }
+  }
+
+  .register-box__info {
+    @include bp(mobile) {
+      width: 102% !important;
+      left: -3px;
+    }
+
+  }
+
+  .dorm-inf__title {
+    @include bp(mobile) {
+      font-size: 12px !important;
+    }
+  }
+
+  .mydorm-galeri .galeri-left-wrp {
+    @include bp(mobile) {
+      justify-content: space-around;
+    }
+
+  }
+
+  .select__title {
+    font-size: 20px !important;
+    top: 4px;
+    position: relative;
+  }
+
+  .dorm-inf__item {
+    @include bp(mobile) {
+      padding: 0 20px;
+    }
+
+  }
+
+  .form-container {
+    @include bp(mobile) {
+      width: 100% !important;
+    }
+  }
+
+  .select-header {
+    @include bp(mobile) {
+    }
+  }
+
+  .mydorm-galeri .galeri-left__item {
+    @include bp(mobile) {
+      width: 46%;
+      margin-bottom: 14px;
+    }
+  }
+
+  .mydorm-galeri .galeri-right__box {
+    @include bp(mobile) {
+      width: 95%;
+      margin: 0 auto;
+      height: 150px;
+    }
+  }
+
+  .user-settings__top {
+    border-bottom: 1px solid #cbd0dd6b;
+  }
+
+  .user-settings__profil-img {
+    width: 25%;
+    height: 25%;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: white;
+    padding: 13px;
+    box-shadow: 0px 8px 60px 0px rgba(62, 62, 141, 0.05);
+  }
+
+  .user-settings__profil-mail {
+    margin-right: 102px;
+    color: #656e8d;
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .user-settings__profil-name.mail {
+    font-size: 16px;
+    padding-right: 35px;
+
+    .sign-out {
+      margin-left: 16px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+
+  .select__placeholder {
+    font-size: 15px !important;
+    color: #b0b6c8;
+  }
+
+  .form-container {
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  .my-dorm__title {
+    color: #22d4b0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .form-control {
+    border-bottom: 1px solid #e7e9ef !important;
+    margin-bottom: 20px;
+  }
+
+  .groups {
+    display: flex;
+    justify-content: space-between;
+    @include bp(mobile) {
+      display: block;
+    }
+
+    .select {
+      border-bottom: 1px solid #e7e9ef;
+      margin-right: 45px;
+
+      &__title {
+        font-size: 15px !important;
+        color: #7f879e;
+        opacity: 0.7;
+        font-weight: bold;
+
+      }
+    }
+  }
+
+  .register-box {
+    margin-top: 35px;
+    width: 100%;
+    @include bp(mobile) {
+      width: 102%;
+      left: -3px;
+    }
+  }
+
+  .register-box_input {
+    margin-top: 0;
+  }
+
+  .textara {
+    .form-input {
+      height: 140px;
+    }
+  }
+
+  .room-type {
+    &__item {
+
+      display: flex;
+      justify-content: space-between;
+      border-radius: 15px;
+      transition: all 0.4s;
+      position: relative;
+      flex-direction: column;
+      margin-top: -7px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: 3px;
+        width: 90%;
+        height: 1px;
+        background: rgba(187, 193, 211, 0.46);
+        right: 0;
+        margin: 0 auto;
+      }
+
+    }
+
+    &-left {
+      color: #999fb5;
+      font-size: 17px;
+      font-weight: bold;
+      position: relative;
+      top: 20px;
+    }
+
+    &-right {
+      display: flex;
+      margin-top: 18px;
+    }
+
+    &__price {
+      position: relative;
+      font-size: 20px;
+      font-weight: bold;
+      color: #9098b0;
+      margin-right: 20px;
+      transition: all 0.3s;
+      @include bp(mobile) {
+        line-height: 1.1;
+      }
+
+
+      &:first-child {
+        margin-right: 30px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          right: -15px;
+          top: 0;
+          width: 1px;
+          height: 100%;
+          background: rgba(187, 193, 211, 0.46);
+
+        }
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 100;
+      }
+    }
+
+    &-icons {
+      span {
+        padding: 6px;
+        background-color: #f5f8fc;
+        border-radius: 100%;
+        font-size: 13px;
+        color: #9ca3b1;
+        margin-right: 5px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include bp(mobile) {
+          padding: 0;
+          background-color: transparent;
+        }
+      }
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 6px;
+      margin: 4px 52px;
+      transition: all 0.4s;
+      @include bp(mobile) {
+        margin: 4px 20px;
+        flex-direction: column;
+      }
+
+      &:hover {
+        background-color: #f5f8fc;
+
+        .room-type-left, .room-type__price, .icon-update, .icon-delete {
+          color: #4b5da1;
+        }
+
+        .icon-delete, .icon-update {
+          background-color: white;
+        }
+
+        .room-type__price span {
+          color: #9098b0;
+        }
+      }
+    }
+  }
+
+  .room-update {
+    margin-top: 15px;
+    padding: 35px 65px;
+    border-top: 2px solid #e4e6ee;
+    min-height: 600px;
+    @include bp(mobile) {
+      padding: 35px 27px;
+
+    }
+
+    .form-container {
+      width: 50%;
+
+    }
+
+    .big {
+      width: 170%;
+
+    }
+
+    &__title {
+      position: relative;
+      font-size: 13px;
+      font-weight: bold;
+      color: #b6bcc9;
+
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 1px;
+        background-color: #eaecf1;
+        left: 0;
+        top: 18px;
+      }
+    }
+
+    .choose-wrp {
+      column-count: 2;
+      margin-top: 35px;
+
+      .dorm-inf__item {
+        &:before {
+          content: '';
+          position: absolute;
+          width: 1em;
+          height: 1em;
+          background: #f0f4f9;
+          border-radius: 50%;
+          font-size: 18px;
+          left: 0;
+          border: 1px solid #d2d0d0;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 1em;
+          height: 1em;
+          background: #65c7a4;
+          border-radius: 50%;
+          font-size: 8px;
+          left: 5px;
+        }
+
+        &.disable {
+          &:after {
+            opacity: 0;
+          }
+        }
+      }
+
+    }
+
+    .submit {
+      width: 100%;
+      background-color: #16d2a4;
+      padding: 16px 0;
+      border-radius: 9px;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 30px;
+    }
+  }
+
+  .choose-gen {
+    padding: 35px 0;
+  }
+
+  .select__caret {
+    width: 30px;
+    height: 30px;
+    background: #f9f9f9;
+
+    .icon {
+      font-size: 11px;
+    }
+  }
+
+}
+
+.dorm-inf__title {
+  font-weight: 500 !important;
+}

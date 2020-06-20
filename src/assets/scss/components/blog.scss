@@ -1,0 +1,147 @@
+@import "../variables";
+
+.blog {
+  .wrapper{
+    padding-bottom: 145px;
+  }
+
+  
+  
+  .mobileTab{
+    @include bp(mobile){
+      padding: 20px 35px 0;
+      background: transparent;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      .select{
+        background: #FFF;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        padding: 0;
+        .select-header{
+          padding-right: 15px;
+          height: auto;
+          input{
+            padding-bottom: inherit;
+            padding: 10px 15px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .section__header{
+    padding: 18px 0;
+    margin: 18px 10px;
+  }
+
+  .select__list-search{
+    padding-bottom: 0
+  }
+  .banner-mobile{
+    display: none;
+    @include bp(mobile) {
+     display: block;
+    }
+
+  }
+  .subpage-header__txt {
+    color: #656e8d;
+    opacity: .8;
+  }
+
+  &-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 36px;
+
+    &__item {
+      padding: 20px 11px;
+      width: 33.33%;
+      a{
+        display: block !important;
+      }
+      @include bp(tablet) {
+       width: 48%;
+       padding: 8px 1%;
+      }
+      @include bp(mobile) {
+       width: 100%;
+        padding: 8px 0;
+      }
+    }
+
+    .result-bracket__title {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    &__bottom {
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+
+      .button--stroke {
+        border-width: 1px;
+        padding: 15px 35px 11px;
+      }
+    }
+  }
+  .blog-header-social__title{
+    font-size: 14px;
+  }
+  .social-group{
+    margin-top: 15px;
+  }
+  .social-group__item{
+    font-size: 17px;
+    line-height: 10px;
+    opacity: 0.6;
+    width: 44px;
+    height: 44px;
+    & > span{
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+
+.desktopBlog{
+
+  @include bp(mobile) {
+    display: none;
+  }
+}
+
+.mobileBlog{
+  display: none;
+  @include bp(mobile) {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,144 @@
+@import "../variables";
+
+.subpage-nav {
+  border-bottom: 1px solid #c4c9d8;
+  .custom-container{
+    padding-left: 0;
+  }
+
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 0 25px;
+    //border-right: 1px solid #c4c9d8;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+
+    @include bp(mobile) {
+      padding: 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1px;
+      height: 50%;
+      background: #c4c9d8;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: 0;
+
+      &:after {
+        display: none;
+      }
+
+    }
+
+  }
+
+  &__link {
+    font-size: 20px;
+    padding: 30px 6px;
+    font-weight: 500;
+    color: #848ca6;
+    display: inline-flex;
+    margin-bottom: -1px;
+    line-height: 1em;
+    position: relative;
+    //border-bottom: 2px solid transparent;
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      width: 0%;
+      background: #2bd2a6;
+      transition: all .3s ease-in-out;
+    }
+
+    .btn-txt {
+      position: relative;
+      top: 3px;
+      left: 4px;
+    }
+
+    &:hover {
+      color: #2bd2a6;
+    }
+
+    &.router-link-active, &.active {
+      color: #2bd2a6;
+
+      &:after {
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  &.DesktopTab{
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      width: 0%;
+      background: #2bd2a6;
+      transition: all .3s ease-in-out;
+    }
+    &.active{
+      &:after{
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

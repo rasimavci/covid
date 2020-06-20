@@ -1,0 +1,146 @@
+@import "../variables";
+
+.login {
+
+  .footer__top {
+    margin-top: 100px;
+  }
+
+  .header-menu {
+    display: none;
+
+    &__item {
+      display: none;
+    }
+  }
+
+  .form-placeholder {
+    font-size: 14px;
+  }
+
+  .form-placeholder {
+    margin-top: -7px;
+  }
+  .button__wrp{
+
+  }
+  .form-container {
+    &:nth-last-child(2) {
+      .form-input {
+        border-bottom: 1px solid #f1f1f1;
+      }
+
+    }
+  }
+
+  &-wrapper {
+    margin-top: 130px;
+  }
+
+  &-box {
+    width: 485px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 60px 0px rgba(62, 62, 141, 0.05);
+    position: relative;
+    @include bp(mobile) {
+      width: 94%;
+    }
+
+    &__title {
+      font-size: 18px;
+      text-align: center;
+      color: #4a61a2;
+      font-weight: bold;
+      letter-spacing: 0.4px;
+    }
+
+    &__submit {
+      .button__txt {
+        font-size: 15px;
+      }
+    }
+
+    .green {
+      margin-top: 18px;
+    }
+    &__bottom{
+      position: absolute;
+      text-align: center;
+      width: 100% !important;
+      margin: 50px auto;
+      left: 0;
+      &-text{
+      font-size:14px;
+        margin-bottom: 5px;
+      }
+      &-link{
+        color:#16d2a4;
+        font-weight: bold;
+        font-size:14px;
+      }
+    }
+    &__dorm{
+      font-size: 14px;
+      padding: 7px 0;
+      border-top: 1px solid #97a0c3;
+      margin-top: 12px;
+      a{
+        color: #5567ab !important;
+        font-weight: bold;
+        position: relative;
+        top: 8px;
+      }
+    }
+  }
+  .green{
+    &:hover{
+      background-color: #37e6bf !important;
+    }
+  }
+  .fw{
+    &:hover{
+      background-color: #c7d0de;
+    }
+  }
+}
+
+.password-forget{
+  font-size: 15px;
+  float: right;
+  color: #5565ae;
+  text-decoration: underline;
+}
+
+.forget{
+
+  .header-menu{
+    display:none;
+  }
+
+  .header-menu__item{
+    display: none;
+  }
+
+
+}
+
+.register .login-box{
+  @include bp(tablet) {
+    width: 100%;
+  }
+}
+
+.advertisement .login-box{
+  @include bp(tablet) {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.advertisement .section__inner .subpage-accordion{
+  @include bp(tablet) {
+    flex-direction: column;
+  }
+}

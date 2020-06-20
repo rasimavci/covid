@@ -16,12 +16,13 @@ export default new Router({
     return { x: 0, y: 0 }
   },
   routes: [
-    { 
+    {  
       path: '/',
       name: 'home',
       component: Home,
       meta: { pageClass: 'home', breadcrumb: 'Covid19' }
     },
+    
     {
       path: '/icon-sprite',
       name: 'IconSprite',

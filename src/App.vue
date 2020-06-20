@@ -12,7 +12,7 @@
       </div>
     </transition>
 
-    <HeaderNav  @open="showMenus"/>
+    <!-- <HeaderNav  @open="showMenus"/> -->
 <Home/>
     <Mobile v-if="showMenu"/>
 
@@ -22,7 +22,7 @@
         <router-view/>
       </transition>
     </div>
-    <Footer/>
+    <!-- <Footer/> -->
   </div>
 </template>
 <script>

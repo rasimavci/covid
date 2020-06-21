@@ -1,5 +1,5 @@
 # Covid 19
-Coronovirüs bilgilendirme sayfasına hoşgeldiniz ! Tüm ülkeler için virüs durum grafiğini görebilirizsiniz.
+Coronovirüs bilgilendirme sayfasına hoşgeldiniz ! Tüm ülkeler coronavirüs bilgilerini ve durum grafiğini görebilirsiniz.
 
 Welcome to Novel Coronavirus Reporting Page ! Here you can find covid19 information for Turkey.
 <p>
